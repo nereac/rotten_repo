@@ -7,7 +7,7 @@
     = csrf_meta_tags
 
   %body
-    %h1.title= link_to 'MyRottenPotatoes ', movies_path
+    %h1.title= link_to 'MyRottenPotatoes',  movies_path, :class=>'title'
     - if flash[:notice]
       #notice.message= flash[:notice]
     - elsif flash[:warning]
